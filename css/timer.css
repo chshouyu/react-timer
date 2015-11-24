@@ -1,0 +1,42 @@
+.wrapper {
+    header {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.btns {
+    text-align: center;
+    margin-top: 20px;
+    input {
+        display: inline-block;
+        margin: 0 10px;
+        width: 90px;
+        height: 36px;
+        border: 1px solid #111;
+        border-radius: 2px;
+        background: #fff;
+        font-size: 18px;
+        outline: none;
+        
+        &:hover {
+            background: #fafafa;
+        }
+    }
+}
+
+.time-screen {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Droid Sans Mono', Consolas;
+}
+
+.counts-list {
+    margin: 0;
+    li {
+        font-family: 'Droid Sans Mono', Consolas;
+        font-size: 20px;
+    }
+}
