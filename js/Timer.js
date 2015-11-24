@@ -41,7 +41,7 @@ class Timer extends Component {
         let mins = Math.floor(seconds / 60) % 60;
         let secs = seconds % 60;
         let hours = Math.floor(seconds / 3600);
-        return `${hours}:${mins}:${secs}:${millSeconds}`.replace(/(^|:)(\d)(?=:)/g, '$10$2');
+        return `${hours}:${mins}:${secs}.${millSeconds}`.replace(/(^|:)(\d)(?=\:|\.)/g, '$10$2');
     }
     render () {
         const { mill, isRunning, counts } = this.state;
