@@ -38,7 +38,7 @@ class Timer extends Component {
     parseTime (mill) {
         let seconds = Math.floor(mill / 1000);
         let millSeconds = Math.floor(mill % 1000 / 100);
-        let mins = Math.floor(seconds / 60);
+        let mins = Math.floor(seconds / 60) % 60;
         let secs = seconds % 60;
         let hours = Math.floor(seconds / 3600);
         return `${hours}:${mins}:${secs}:${millSeconds}`.replace(/(^|:)(\d)(?=:)/g, '$10$2');
