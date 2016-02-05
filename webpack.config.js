@@ -39,12 +39,12 @@ module.exports = {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             loaders: getJSLoaders([
-                'babel-loader?presets[]=es2015,presets[]=react&+cacheDirectory'
+                'babel?presets[]=es2015,presets[]=react&+cacheDirectory'
             ])
         }, {
             test: /\.css$/,
             exclude: /node_modules/,
-            loader: 'style-loader!css-loader!postcss-loader'
+            loader: 'style!css!postcss'
         }]
     },
     plugins: [
